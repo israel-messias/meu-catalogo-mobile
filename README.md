@@ -1,5 +1,18 @@
 # Meu Catálogo
 
+## Versão publicada para avaliação
+
+- Repositório: https://github.com/israel-messias/meu-catalogo-mobile
+- Tag imutável: `entrega-v1`
+- Commit do código avaliado: `81dd77e62975ec7f313df5e5066652262ef2c796`
+- Build aprovado: https://github.com/israel-messias/meu-catalogo-mobile/actions/runs/37245793995
+- APK: https://github.com/israel-messias/meu-catalogo-mobile/releases/tag/entrega-v1
+
+Formatação, análise estática, três widget tests e geração do APK debug foram
+concluídos com sucesso no GitHub Actions. A release corresponde ao commit
+da tag. Commits posteriores que acrescentam documentação não alteram essa
+versão do aplicativo. A instalação em aparelho Android não foi auditada.
+
 Catálogo pessoal de livros para Desenvolvimento Mobile I. Flutter e Dart,
 Material 3, idioma português. Três telas: coleção, detalhe e formulário.
 Estado em memória: encerrar o app elimina os dados. Não usa API, Firebase,
@@ -50,35 +63,25 @@ bloqueou o compilador do shader padrão. O app usa `InkRipple` e dispensa
 esse shader em execução. Em ambiente configurado normalmente, use os
 comandos de validação acima sem essa opção.
 
-## Subir ao GitHub e fixar a versão
-
-Crie um repositório vazio e acessível ao professor. Nesta pasta:
+## Recuperar a versão avaliada
 
 ```sh
-git init
-git add .
-git commit -m "Trabalho final: Meu Catalogo"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-git push -u origin main
-git tag entrega-v1
-git push origin entrega-v1
-git rev-parse HEAD
+git clone https://github.com/israel-messias/meu-catalogo-mobile.git
+cd meu-catalogo-mobile
+git checkout entrega-v1
+flutter pub get
+flutter run
 ```
 
-Guarde o hash completo e informe no PDF a URL e a tag `entrega-v1`.
-Se modificar o código depois, crie uma nova tag e atualize o PDF.
-Não mova uma tag já usada como referência de avaliação.
+A tag `entrega-v1` identifica exatamente o código compilado. Se modificar
+o aplicativo, crie outra tag e atualize a versão citada no relatório.
 
 ## Preparar o PDF
 
-O PDF tem campos editáveis para nome, matrícula, repositório e versão.
-Preencha todos, salve uma cópia e renomeie para
-`M1_trabalho_final_SUA_MATRICULA_SEU_NOME.pdf`.
-Se o build Android ainda estiver pendente, execute o workflow, confirme
-o resultado e acrescente a evidência do APK antes de enviar. Confira a
-matriz de critérios do PDF e compare com o modelo oficial da disciplina,
-que não foi disponibilizado nesta conversa.
+O PDF individual preenchido é entregue diretamente ao aluno. Ele contém
+o repositório, o hash completo, a tag e a execução de build desta versão.
+Confira a matriz de critérios do PDF e compare com o modelo oficial da
+disciplina, que não foi disponibilizado nesta conversa.
 
 Abra o PDF salvo, teste o link do repositório, confira tag/hash e legibilidade.
 A entrega ao professor é somente o PDF; o código e o APK ficam no repositório

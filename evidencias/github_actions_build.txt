@@ -1,0 +1,375 @@
+﻿2026-10-05T00:00:42.7718974Z Current runner version: '2.337.0'
+2026-10-05T00:00:42.7736381Z ##[group]Runner Image Provisioner
+2026-10-05T00:00:42.7736994Z Hosted Compute Agent
+2026-10-05T00:00:42.7737392Z Version: 20260901.588
+2026-10-05T00:00:42.7737774Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+2026-10-05T00:00:42.7738236Z Build Date: 2026-09-01T19:56:44Z
+2026-10-05T00:00:42.7738638Z Worker ID: {41a2dc53-eef6-48bf-a471-f5ae92a9056a}
+2026-10-05T00:00:42.7739042Z Azure Region: centralus
+2026-10-05T00:00:42.7739464Z ##[endgroup]
+2026-10-05T00:00:42.7740330Z ##[group]Operating System
+2026-10-05T00:00:42.7740729Z Ubuntu
+2026-10-05T00:00:42.7741040Z 24.04.5
+2026-10-05T00:00:42.7741340Z LTS
+2026-10-05T00:00:42.7741721Z ##[endgroup]
+2026-10-05T00:00:42.7742113Z ##[group]Runner Image
+2026-10-05T00:00:42.7742480Z Image: ubuntu-24.04
+2026-10-05T00:00:42.7742829Z Version: 20260927.320.1
+2026-10-05T00:00:42.7743644Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-05T00:00:42.7744512Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+2026-10-05T00:00:42.7745351Z ##[endgroup]
+2026-10-05T00:00:42.7746321Z ##[group]GITHUB_TOKEN Permissions
+2026-10-05T00:00:42.7747743Z Contents: read
+2026-10-05T00:00:42.7748093Z Metadata: read
+2026-10-05T00:00:42.7748443Z Packages: read
+2026-10-05T00:00:42.7748816Z ##[endgroup]
+2026-10-05T00:00:42.7750161Z Secret source: Actions
+2026-10-05T00:00:42.7750762Z Cache mode: write
+2026-10-05T00:00:42.7751169Z Prepare workflow directory
+2026-10-05T00:00:42.7963854Z Prepare all required actions
+2026-10-05T00:00:42.7995097Z Getting action download info
+2026-10-05T00:00:43.0512794Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-05T00:00:43.1456494Z Download action repository 'actions/setup-java@v4' (SHA:cf277c60eb25467037889841efdb72551f06f6c3)
+2026-10-05T00:00:43.7336987Z Download action repository 'subosito/flutter-action@v2' (SHA:1a449444c387b1966244ae4d4f8c696479add0b2)
+2026-10-05T00:00:43.9429920Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-05T00:00:44.1567836Z Getting action download info
+2026-10-05T00:00:44.2540822Z Download action repository 'actions/cache@v5' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-10-05T00:00:44.4122099Z Complete job name: validar
+2026-10-05T00:00:44.4652641Z ##[group]Run actions/checkout@v4
+2026-10-05T00:00:44.4653363Z with:
+2026-10-05T00:00:44.4653911Z   repository: israel-messias/meu-catalogo-mobile
+2026-10-05T00:00:44.4658449Z   token: ***
+2026-10-05T00:00:44.4658928Z   ssh-strict: true
+2026-10-05T00:00:44.4659416Z   ssh-user: git
+2026-10-05T00:00:44.4659920Z   persist-credentials: true
+2026-10-05T00:00:44.4660460Z   clean: true
+2026-10-05T00:00:44.4660963Z   sparse-checkout-cone-mode: true
+2026-10-05T00:00:44.4661555Z   fetch-depth: 1
+2026-10-05T00:00:44.4662043Z   fetch-tags: false
+2026-10-05T00:00:44.4662545Z   show-progress: true
+2026-10-05T00:00:44.4663066Z   lfs: false
+2026-10-05T00:00:44.4663535Z   submodules: false
+2026-10-05T00:00:44.4717116Z   set-safe-directory: true
+2026-10-05T00:00:44.4717784Z   allow-unsafe-pr-checkout: false
+2026-10-05T00:00:44.4719222Z ##[endgroup]
+2026-10-05T00:00:44.5392379Z Syncing repository: israel-messias/meu-catalogo-mobile
+2026-10-05T00:00:44.5394272Z ##[group]Getting Git version info
+2026-10-05T00:00:44.5395253Z Working directory is '/home/runner/work/meu-catalogo-mobile/meu-catalogo-mobile'
+2026-10-05T00:00:44.5396787Z [command]/usr/bin/git version
+2026-10-05T00:00:44.5456099Z git version 2.55.0
+2026-10-05T00:00:44.5476818Z ##[endgroup]
+2026-10-05T00:00:44.5487687Z Temporarily overriding HOME='/home/runner/work/_temp/8611e273-348b-47f5-9a02-2d79e2b36203' before making global git config changes
+2026-10-05T00:00:44.5489610Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-05T00:00:44.5491346Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/meu-catalogo-mobile/meu-catalogo-mobile
+2026-10-05T00:00:44.5537388Z Deleting the contents of '/home/runner/work/meu-catalogo-mobile/meu-catalogo-mobile'
+2026-10-05T00:00:44.5543707Z ##[group]Initializing the repository
+2026-10-05T00:00:44.5546986Z [command]/usr/bin/git init /home/runner/work/meu-catalogo-mobile/meu-catalogo-mobile
+2026-10-05T00:00:44.5638797Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-05T00:00:44.5640208Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-05T00:00:44.5641240Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-05T00:00:44.5642057Z hint: call:
+2026-10-05T00:00:44.5642534Z hint:
+2026-10-05T00:00:44.5643132Z hint: 	git config --global init.defaultBranch <name>
+2026-10-05T00:00:44.5644036Z hint:
+2026-10-05T00:00:44.5645016Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-05T00:00:44.5646278Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-05T00:00:44.5647339Z hint:
+2026-10-05T00:00:44.5647923Z hint: 	git branch -m <name>
+2026-10-05T00:00:44.5648712Z hint:
+2026-10-05T00:00:44.5649754Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-05T00:00:44.5651469Z Initialized empty Git repository in /home/runner/work/meu-catalogo-mobile/meu-catalogo-mobile/.git/
+2026-10-05T00:00:44.5654355Z [command]/usr/bin/git remote add origin https://github.com/israel-messias/meu-catalogo-mobile
+2026-10-05T00:00:44.5698633Z ##[endgroup]
+2026-10-05T00:00:44.5699973Z ##[group]Disabling automatic garbage collection
+2026-10-05T00:00:44.5701209Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-05T00:00:44.5728543Z ##[endgroup]
+2026-10-05T00:00:44.5729931Z ##[group]Setting up auth
+2026-10-05T00:00:44.5732380Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-05T00:00:44.5765293Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-05T00:00:44.6067393Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-05T00:00:44.6095025Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-05T00:00:44.6261184Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-05T00:00:44.6287805Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-05T00:00:44.6451771Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-05T00:00:44.6503021Z ##[endgroup]
+2026-10-05T00:00:44.6503907Z ##[group]Fetching the repository
+2026-10-05T00:00:44.6509342Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +81dd77e62975ec7f313df5e5066652262ef2c796:refs/remotes/origin/main
+2026-10-05T00:00:45.0243362Z From https://github.com/israel-messias/meu-catalogo-mobile
+2026-10-05T00:00:45.0243738Z  * [new ref]         81dd77e62975ec7f313df5e5066652262ef2c796 -> origin/main
+2026-10-05T00:00:45.0247596Z ##[endgroup]
+2026-10-05T00:00:45.0248003Z ##[group]Determining the checkout info
+2026-10-05T00:00:45.0249490Z ##[endgroup]
+2026-10-05T00:00:45.0253530Z [command]/usr/bin/git sparse-checkout disable
+2026-10-05T00:00:45.0295089Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-05T00:00:45.0319654Z ##[group]Checking out the ref
+2026-10-05T00:00:45.0322533Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-05T00:00:45.0437648Z Switched to a new branch 'main'
+2026-10-05T00:00:45.0441863Z branch 'main' set up to track 'origin/main'.
+2026-10-05T00:00:45.0445882Z ##[endgroup]
+2026-10-05T00:00:45.0477693Z [command]/usr/bin/git log -1 --format=%H
+2026-10-05T00:00:45.0498938Z 81dd77e62975ec7f313df5e5066652262ef2c796
+2026-10-05T00:00:45.0689961Z ##[group]Run actions/setup-java@v4
+2026-10-05T00:00:45.0690156Z with:
+2026-10-05T00:00:45.0690294Z   distribution: temurin
+2026-10-05T00:00:45.0690445Z   java-version: 17
+2026-10-05T00:00:45.0690587Z   java-package: jdk
+2026-10-05T00:00:45.0690731Z   check-latest: false
+2026-10-05T00:00:45.0690876Z   server-id: github
+2026-10-05T00:00:45.0691031Z   server-username: GITHUB_ACTOR
+2026-10-05T00:00:45.0691203Z   server-password: GITHUB_TOKEN
+2026-10-05T00:00:45.0691375Z   overwrite-settings: true
+2026-10-05T00:00:45.0691534Z   job-status: success
+2026-10-05T00:00:45.0692766Z   token: ***
+2026-10-05T00:00:45.0692907Z ##[endgroup]
+2026-10-05T00:00:45.1708551Z ##[warning]setup-java v4 is deprecated and will no longer receive updates. Please migrate to actions/setup-java@v5.
+2026-10-05T00:00:45.1714956Z ##[group]Installed distributions
+2026-10-05T00:00:45.1738986Z Resolved Java 17.0.20+1 from tool-cache
+2026-10-05T00:00:45.1739322Z Setting Java 17.0.20+1 as the default
+2026-10-05T00:00:45.1745391Z (node:2165) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-05T00:00:45.1746031Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-05T00:00:45.1747386Z Creating toolchains.xml for JDK version 17 from temurin
+2026-10-05T00:00:45.1788398Z Writing to /home/runner/.m2/toolchains.xml
+2026-10-05T00:00:45.1788881Z 
+2026-10-05T00:00:45.1789057Z Java configuration:
+2026-10-05T00:00:45.1789331Z   Distribution: temurin
+2026-10-05T00:00:45.1789584Z   Version: 17.0.20+1
+2026-10-05T00:00:45.1789912Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:00:45.1797336Z 
+2026-10-05T00:00:45.1802572Z ##[endgroup]
+2026-10-05T00:00:45.1815214Z Creating settings.xml with server-id: github
+2026-10-05T00:00:45.1824906Z Writing to /home/runner/.m2/settings.xml
+2026-10-05T00:00:45.2056486Z ##[group]Run subosito/flutter-action@v2
+2026-10-05T00:00:45.2056708Z with:
+2026-10-05T00:00:45.2056849Z   flutter-version: 3.47.6
+2026-10-05T00:00:45.2057001Z   channel: stable
+2026-10-05T00:00:45.2057139Z   architecture: X64
+2026-10-05T00:00:45.2057275Z   cache: false
+2026-10-05T00:00:45.2057418Z   pub-cache-path: default
+2026-10-05T00:00:45.2057568Z   dry-run: false
+2026-10-05T00:00:45.2057739Z   git-source: https://github.com/flutter/flutter.git
+2026-10-05T00:00:45.2057928Z env:
+2026-10-05T00:00:45.2058120Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:00:45.2058404Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:00:45.2058650Z ##[endgroup]
+2026-10-05T00:00:45.2097246Z ##[start-action display=Make yq tool available on Windows runners;id=__subosito_flutter-action.__run]
+2026-10-05T00:00:45.2103971Z ##[end-action id=__subosito_flutter-action.__run;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-05T00:00:45.2105325Z ##[start-action display=Make setup script executable;id=__subosito_flutter-action.__run_2]
+2026-10-05T00:00:45.2129887Z ##[group]Run chmod +x "$GITHUB_ACTION_PATH/setup.sh"
+2026-10-05T00:00:45.2130157Z [36;1mchmod +x "$GITHUB_ACTION_PATH/setup.sh"[0m
+2026-10-05T00:00:45.2356702Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-05T00:00:45.2356931Z env:
+2026-10-05T00:00:45.2357132Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:00:45.2357423Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:00:45.2357647Z ##[endgroup]
+2026-10-05T00:00:45.2457613Z ##[end-action id=__subosito_flutter-action.__run_2;outcome=success;conclusion=success;duration_ms=35]
+2026-10-05T00:00:45.2459336Z ##[start-action display=Set action inputs;id=__subosito_flutter-action.flutter-action]
+2026-10-05T00:00:45.2486156Z ##[group]Run $GITHUB_ACTION_PATH/setup.sh -p \
+2026-10-05T00:00:45.2486593Z [36;1m$GITHUB_ACTION_PATH/setup.sh -p \[0m
+2026-10-05T00:00:45.2486785Z [36;1m  -n '3.47.6' \[0m
+2026-10-05T00:00:45.2486935Z [36;1m  -f '' \[0m
+2026-10-05T00:00:45.2487077Z [36;1m  -a 'X64' \[0m
+2026-10-05T00:00:45.2487219Z [36;1m  -k '' \[0m
+2026-10-05T00:00:45.2487355Z [36;1m  -c '' \[0m
+2026-10-05T00:00:45.2487488Z [36;1m  -l '' \[0m
+2026-10-05T00:00:45.2487628Z [36;1m  -d 'default' \[0m
+2026-10-05T00:00:45.2487838Z [36;1m  -g 'https://github.com/flutter/flutter.git' \[0m
+2026-10-05T00:00:45.2488040Z [36;1m  stable[0m
+2026-10-05T00:00:45.2538204Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-05T00:00:45.2538419Z env:
+2026-10-05T00:00:45.2538619Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:00:45.2538916Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:00:45.2539147Z ##[endgroup]
+2026-10-05T00:00:45.5520268Z ##[end-action id=__subosito_flutter-action.flutter-action;outcome=success;conclusion=success;duration_ms=306]
+2026-10-05T00:00:45.5523866Z ##[start-action display=Cache Flutter;id=__subosito_flutter-action.cache-flutter]
+2026-10-05T00:00:45.5527624Z ##[end-action id=__subosito_flutter-action.cache-flutter;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-05T00:00:45.5528796Z ##[start-action display=Cache pub dependencies;id=__subosito_flutter-action.cache-pub]
+2026-10-05T00:00:45.5532582Z ##[end-action id=__subosito_flutter-action.cache-pub;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-05T00:00:45.5533654Z ##[start-action display=Run setup script;id=__subosito_flutter-action.__run_3]
+2026-10-05T00:00:45.5558644Z ##[group]Run $GITHUB_ACTION_PATH/setup.sh \
+2026-10-05T00:00:45.5558861Z [36;1m$GITHUB_ACTION_PATH/setup.sh \[0m
+2026-10-05T00:00:45.5559042Z [36;1m  -n '3.47.6' \[0m
+2026-10-05T00:00:45.5559194Z [36;1m  -a 'x64' \[0m
+2026-10-05T00:00:45.5559392Z [36;1m  -c '/opt/hostedtoolcache/flutter/stable-3.47.6-x64' \[0m
+2026-10-05T00:00:45.5559761Z [36;1m  -d '/home/runner/.pub-cache' \[0m
+2026-10-05T00:00:45.5559938Z [36;1m  stable[0m
+2026-10-05T00:00:45.5619144Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-10-05T00:00:45.5619353Z env:
+2026-10-05T00:00:45.5619546Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:00:45.5621388Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:00:45.5621616Z ##[endgroup]
+2026-10-05T00:00:45.8225927Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2026-10-05T00:00:45.8226499Z                                  Dload  Upload   Total   Spent    Left  Speed
+2026-10-05T00:00:45.8226653Z 
+2026-10-05T00:00:46.5809884Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-10-05T00:00:47.5934371Z   4 1504M    4 62.1M    0     0  82.0M      0  0:00:18 --:--:--  0:00:18 81.9M
+2026-10-05T00:00:48.5792122Z  16 1504M   16  245M    0     0   138M      0  0:00:10  0:00:01  0:00:09  138M
+2026-10-05T00:00:49.5920551Z  28 1504M   28  431M    0     0   156M      0  0:00:09  0:00:02  0:00:07  156M
+2026-10-05T00:00:50.5782940Z  41 1504M   41  621M    0     0   164M      0  0:00:09  0:00:03  0:00:06  164M
+2026-10-05T00:00:51.5924370Z  53 1504M   53  806M    0     0   169M      0  0:00:08  0:00:04  0:00:04  169M
+2026-10-05T00:00:52.5834611Z  65 1504M   65  984M    0     0   170M      0  0:00:08  0:00:05  0:00:03  184M
+2026-10-05T00:00:53.5790784Z  77 1504M   77 1172M    0     0   173M      0  0:00:08  0:00:06  0:00:02  185M
+2026-10-05T00:00:54.3456650Z  90 1504M   90 1363M    0     0   175M      0  0:00:08  0:00:07  0:00:01  186M
+2026-10-05T00:00:54.3457159Z 100 1504M  100 1504M    0     0   176M      0  0:00:08  0:00:08 --:--:--  185M
+2026-10-05T00:01:34.0095377Z ##[end-action id=__subosito_flutter-action.__run_3;outcome=success;conclusion=success;duration_ms=48456]
+2026-10-05T00:01:34.0150171Z ##[group]Run flutter pub get
+2026-10-05T00:01:34.0150363Z [36;1mflutter pub get[0m
+2026-10-05T00:01:34.0203659Z shell: /usr/bin/bash -e {0}
+2026-10-05T00:01:34.0203825Z env:
+2026-10-05T00:01:34.0204022Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:01:34.0204302Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:01:34.0204565Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.6-x64/flutter
+2026-10-05T00:01:34.0204775Z   PUB_CACHE: /home/runner/.pub-cache
+2026-10-05T00:01:34.0204924Z ##[endgroup]
+2026-10-05T00:01:39.4062819Z Resolving dependencies...
+2026-10-05T00:01:40.0408548Z Downloading packages...
+2026-10-05T00:01:40.7074936Z   flutter_lints 5.0.0 (6.0.0 available)
+2026-10-05T00:01:40.7075273Z   lints 5.1.1 (6.1.0 available)
+2026-10-05T00:01:40.7075521Z   material_color_utilities 0.13.0 (0.13.1 available)
+2026-10-05T00:01:40.7075944Z   meta 1.18.3 (1.19.0 available)
+2026-10-05T00:01:40.7076444Z   test_api 0.7.12 (0.7.14 available)
+2026-10-05T00:01:40.7076663Z   vector_math 2.4.0 (2.4.3 available)
+2026-10-05T00:01:40.7076909Z Got dependencies!
+2026-10-05T00:01:40.7077222Z 6 packages have newer versions incompatible with dependency constraints.
+2026-10-05T00:01:40.7077621Z Try `flutter pub outdated` for more information.
+2026-10-05T00:01:40.8234087Z ##[group]Run dart format --output=none --set-exit-if-changed lib test
+2026-10-05T00:01:40.8234388Z [36;1mdart format --output=none --set-exit-if-changed lib test[0m
+2026-10-05T00:01:40.8286988Z shell: /usr/bin/bash -e {0}
+2026-10-05T00:01:40.8287131Z env:
+2026-10-05T00:01:40.8287302Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:01:40.8287567Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:01:40.8287822Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.6-x64/flutter
+2026-10-05T00:01:40.8288030Z   PUB_CACHE: /home/runner/.pub-cache
+2026-10-05T00:01:40.8288175Z ##[endgroup]
+2026-10-05T00:01:40.8810766Z Formatted 9 files (0 changed) in 0.03 seconds.
+2026-10-05T00:01:40.8882550Z ##[group]Run flutter analyze
+2026-10-05T00:01:40.8882738Z [36;1mflutter analyze[0m
+2026-10-05T00:01:40.8932436Z shell: /usr/bin/bash -e {0}
+2026-10-05T00:01:40.8932572Z env:
+2026-10-05T00:01:40.8932743Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:01:40.8933003Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:01:40.8933255Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.6-x64/flutter
+2026-10-05T00:01:40.8933457Z   PUB_CACHE: /home/runner/.pub-cache
+2026-10-05T00:01:40.8933597Z ##[endgroup]
+2026-10-05T00:01:40.9870511Z Resolving dependencies...
+2026-10-05T00:01:41.0041935Z Downloading packages...
+2026-10-05T00:01:41.0050556Z   flutter_lints 5.0.0 (6.0.0 available)
+2026-10-05T00:01:41.0050930Z   lints 5.1.1 (6.1.0 available)
+2026-10-05T00:01:41.0051249Z   material_color_utilities 0.13.0 (0.13.1 available)
+2026-10-05T00:01:41.0051582Z   meta 1.18.3 (1.19.0 available)
+2026-10-05T00:01:41.0051929Z   test_api 0.7.12 (0.7.14 available)
+2026-10-05T00:01:41.0052206Z   vector_math 2.4.0 (2.4.3 available)
+2026-10-05T00:01:41.0052486Z Got dependencies!
+2026-10-05T00:01:41.0052833Z 6 packages have newer versions incompatible with dependency constraints.
+2026-10-05T00:01:41.0053189Z Try `flutter pub outdated` for more information.
+2026-10-05T00:01:46.9417503Z Analyzing meu-catalogo-mobile...                                
+2026-10-05T00:01:46.9425419Z No issues found! (ran in 5.7s)
+2026-10-05T00:01:46.9538050Z ##[group]Run flutter test test/widget_test.dart
+2026-10-05T00:01:46.9538278Z [36;1mflutter test test/widget_test.dart[0m
+2026-10-05T00:01:46.9588836Z shell: /usr/bin/bash -e {0}
+2026-10-05T00:01:46.9588976Z env:
+2026-10-05T00:01:46.9589148Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:01:46.9589404Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:01:46.9589656Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.6-x64/flutter
+2026-10-05T00:01:46.9590018Z   PUB_CACHE: /home/runner/.pub-cache
+2026-10-05T00:01:46.9590159Z ##[endgroup]
+2026-10-05T00:01:47.0637209Z Resolving dependencies...
+2026-10-05T00:01:47.0817511Z Downloading packages...
+2026-10-05T00:01:47.0826021Z   flutter_lints 5.0.0 (6.0.0 available)
+2026-10-05T00:01:47.0826262Z   lints 5.1.1 (6.1.0 available)
+2026-10-05T00:01:47.0826506Z   material_color_utilities 0.13.0 (0.13.1 available)
+2026-10-05T00:01:47.0826841Z   meta 1.18.3 (1.19.0 available)
+2026-10-05T00:01:47.0827339Z   test_api 0.7.12 (0.7.14 available)
+2026-10-05T00:01:47.0827567Z   vector_math 2.4.0 (2.4.3 available)
+2026-10-05T00:01:47.0827783Z Got dependencies!
+2026-10-05T00:01:47.0828061Z 6 packages have newer versions incompatible with dependency constraints.
+2026-10-05T00:01:47.0828413Z Try `flutter pub outdated` for more information.
+2026-10-05T00:01:47.4732559Z 
+2026-10-05T00:01:54.3780955Z ##[group]✅ Passing tests
+2026-10-05T00:01:54.3781382Z ✅ Valida, cadastra, abre detalhe e edita o mesmo livro
+2026-10-05T00:01:54.5002893Z ✅ Telas sem overflow em Size(360.0, 800.0) e texto ampliado
+2026-10-05T00:01:54.6046372Z ✅ Telas sem overflow em Size(900.0, 1000.0) e texto ampliado
+2026-10-05T00:01:54.6235018Z ##[endgroup]
+2026-10-05T00:01:54.6235284Z 
+2026-10-05T00:01:54.6238231Z 🎉 3 tests passed.
+2026-10-05T00:01:54.6787029Z ##[group]Run flutter build apk --debug
+2026-10-05T00:01:54.6787230Z [36;1mflutter build apk --debug[0m
+2026-10-05T00:01:54.6837474Z shell: /usr/bin/bash -e {0}
+2026-10-05T00:01:54.6837617Z env:
+2026-10-05T00:01:54.6837867Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:01:54.6838125Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:01:54.6838374Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.6-x64/flutter
+2026-10-05T00:01:54.6838576Z   PUB_CACHE: /home/runner/.pub-cache
+2026-10-05T00:01:54.6838720Z ##[endgroup]
+2026-10-05T00:01:54.8151653Z Resolving dependencies...
+2026-10-05T00:01:54.8328670Z Downloading packages...
+2026-10-05T00:01:54.8337231Z   flutter_lints 5.0.0 (6.0.0 available)
+2026-10-05T00:01:54.8337535Z   lints 5.1.1 (6.1.0 available)
+2026-10-05T00:01:54.8337779Z   material_color_utilities 0.13.0 (0.13.1 available)
+2026-10-05T00:01:54.8338093Z   meta 1.18.3 (1.19.0 available)
+2026-10-05T00:01:54.8338299Z   test_api 0.7.12 (0.7.14 available)
+2026-10-05T00:01:54.8338516Z   vector_math 2.4.0 (2.4.3 available)
+2026-10-05T00:01:54.8338734Z Got dependencies!
+2026-10-05T00:01:54.8339006Z 6 packages have newer versions incompatible with dependency constraints.
+2026-10-05T00:01:54.8346295Z Try `flutter pub outdated` for more information.
+2026-10-05T00:04:23.6041013Z Running Gradle task 'assembleDebug'...                            148.6s
+2026-10-05T00:04:24.3352100Z ✓ Built build/app/outputs/flutter-apk/app-debug.apk
+2026-10-05T00:04:24.3514794Z ##[group]Run actions/upload-artifact@v4
+2026-10-05T00:04:24.3515048Z with:
+2026-10-05T00:04:24.3515276Z   name: meu-catalogo-apk-81dd77e62975ec7f313df5e5066652262ef2c796
+2026-10-05T00:04:24.3515563Z   path: build/app/outputs/flutter-apk/app-debug.apk
+2026-10-05T00:04:24.3515933Z   if-no-files-found: warn
+2026-10-05T00:04:24.3516126Z   compression-level: 6
+2026-10-05T00:04:24.3516294Z   overwrite: false
+2026-10-05T00:04:24.3516438Z   include-hidden-files: false
+2026-10-05T00:04:24.3516566Z env:
+2026-10-05T00:04:24.3516725Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:04:24.3528455Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.20-1/x64
+2026-10-05T00:04:24.3528720Z   FLUTTER_ROOT: /opt/hostedtoolcache/flutter/stable-3.47.6-x64/flutter
+2026-10-05T00:04:24.3528913Z   PUB_CACHE: /home/runner/.pub-cache
+2026-10-05T00:04:24.3529048Z ##[endgroup]
+2026-10-05T00:04:24.5528618Z (node:3111) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-05T00:04:24.5529180Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-05T00:04:24.5564154Z With the provided path, there will be 1 file uploaded
+2026-10-05T00:04:24.5567752Z Artifact name is valid!
+2026-10-05T00:04:24.5568441Z Root directory input is valid!
+2026-10-05T00:04:24.8288365Z Beginning upload of artifact content to blob storage
+2026-10-05T00:04:25.1263076Z (node:3111) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-05T00:04:25.7007600Z Uploaded bytes 8388608
+2026-10-05T00:04:26.1170643Z Uploaded bytes 16777216
+2026-10-05T00:04:26.2221011Z Uploaded bytes 25165824
+2026-10-05T00:04:26.6865264Z Uploaded bytes 33554432
+2026-10-05T00:04:27.0302317Z Uploaded bytes 41943040
+2026-10-05T00:04:27.4940744Z Uploaded bytes 50331648
+2026-10-05T00:04:27.8221850Z Uploaded bytes 58720256
+2026-10-05T00:04:27.9676336Z Uploaded bytes 67108864
+2026-10-05T00:04:28.1631514Z Uploaded bytes 72955500
+2026-10-05T00:04:28.2076488Z Finished uploading artifact content to blob storage!
+2026-10-05T00:04:28.2078588Z SHA256 digest of uploaded artifact zip is 3dddb5bc63934ccbd91906c8d0ba6f3e44d19b5ba0cd69c0281fc212f021fe21
+2026-10-05T00:04:28.2080286Z Finalizing artifact upload
+2026-10-05T00:04:28.4436617Z Artifact meu-catalogo-apk-81dd77e62975ec7f313df5e5066652262ef2c796.zip successfully finalized. Artifact ID 11319405978
+2026-10-05T00:04:28.4437534Z Artifact meu-catalogo-apk-81dd77e62975ec7f313df5e5066652262ef2c796 has been successfully uploaded! Final size is 72955500 bytes. Artifact ID is 11319405978
+2026-10-05T00:04:28.4438417Z Artifact download URL: https://github.com/israel-messias/meu-catalogo-mobile/actions/runs/37245793995/artifacts/11319405978
+2026-10-05T00:04:28.4699162Z Post job cleanup.
+2026-10-05T00:04:28.4754277Z Post job cleanup.
+2026-10-05T00:04:28.5686149Z (node:3133) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-05T00:04:28.5784557Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-05T00:04:28.5846607Z Post job cleanup.
+2026-10-05T00:04:28.6560312Z [command]/usr/bin/git version
+2026-10-05T00:04:28.6606517Z git version 2.55.0
+2026-10-05T00:04:28.6639915Z Temporarily overriding HOME='/home/runner/work/_temp/feab2f9d-150e-4f14-939d-2293f239cdf9' before making global git config changes
+2026-10-05T00:04:28.6640673Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-05T00:04:28.6644858Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/meu-catalogo-mobile/meu-catalogo-mobile
+2026-10-05T00:04:28.6685634Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-05T00:04:28.6761533Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-05T00:04:28.7127539Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-05T00:04:28.7171331Z http.https://github.com/.extraheader
+2026-10-05T00:04:28.7236378Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-05T00:04:28.7296878Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-05T00:04:28.7489931Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-05T00:04:28.7529908Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-05T00:04:28.7916786Z Cleaning up orphan processes
+2026-10-05T00:04:28.8174521Z Terminate orphan process: pid (2704) (java)
+2026-10-05T00:04:28.8192351Z Terminate orphan process: pid (2820) (java)
+2026-10-05T00:04:28.8205170Z Terminate orphan process: pid (3033) (java)
+2026-10-05T00:04:28.8212449Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-java@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+
