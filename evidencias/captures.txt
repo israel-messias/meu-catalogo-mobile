@@ -1,0 +1,3 @@
+00:00 +0: loading C:/Users/Admin/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/meu_catalogo/test/evidence_test.dart
+00:00 +0: Capturas reais de listagem, vazio, detalhe e validação
+00:03 +1: All tests passed!

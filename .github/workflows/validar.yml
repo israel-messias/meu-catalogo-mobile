@@ -1,0 +1,27 @@
+name: Validar Flutter e gerar APK
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.6'
+          channel: stable
+      - run: flutter pub get
+      - run: dart format --output=none --set-exit-if-changed lib test
+      - run: flutter analyze
+      - run: flutter test test/widget_test.dart
+      - run: flutter build apk --debug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: meu-catalogo-apk-${{ github.sha }}
+          path: build/app/outputs/flutter-apk/app-debug.apk

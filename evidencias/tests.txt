@@ -1,0 +1,5 @@
+00:00 +0: loading C:/Users/Admin/Documents/Codex/2026-10-04/referenced-chatgpt-conversation-this-is-an/outputs/meu_catalogo/test/widget_test.dart
+00:00 +0: Valida, cadastra, abre detalhe e edita o mesmo livro
+00:02 +1: Telas sem overflow em Size(360.0, 800.0) e texto ampliado
+00:03 +2: Telas sem overflow em Size(900.0, 1000.0) e texto ampliado
+00:03 +3: All tests passed!

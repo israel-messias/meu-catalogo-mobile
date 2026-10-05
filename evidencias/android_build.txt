@@ -1,0 +1,8 @@
+[1/1] Android SDK
+  ├─ [1/6] android-arm-profile/windows-x64                       1.738ms
+  ├─ [2/6] android-arm-release/windows-x64                       1.451ms
+  ├─ [3/6] android-arm64-profile/windows-x64                     1.551ms
+  ├─ [4/6] android-arm64-release/windows-x64                     1.518ms
+  ├─ [5/6] android-x64-profile/windows-x64                       1.668ms
+  └─ [6/6] android-x64-release/windows-x64                       1.602ms
+[!] No Android SDK found. Try setting the ANDROID_HOME environment variable.
